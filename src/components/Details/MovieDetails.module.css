@@ -1,0 +1,95 @@
+.movieDetails {  
+    flex-direction: column;
+    align-items: center;
+}
+
+.goBack {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.movieSection {
+    margin-bottom: 20px;
+}
+
+
+.movieDescr {
+    font-size: 18px;
+}
+
+.movieInfo {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 100px;
+    font-size: 20px;
+    box-shadow:0 6px 6px -6px #666;
+}
+
+.moviePoster {
+    margin-right: 20px;
+    }
+
+.posterImage {
+    width: 200px;
+    height: 300px;
+    }
+
+
+
+.tabs {
+    margin-bottom: 20px;
+    margin-top: 100px;
+    padding-left: 0;
+    margin-left: 100px;
+    box-shadow: #ffffff;
+    }
+
+
+
+.castSection {
+    margin-bottom: 20px;
+    }
+
+.reviewsSection {
+    margin-bottom: 20px;
+    }
+
+.castItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.castImage {
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: rgb(19, 18, 18);
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.castButton {
+    margin: 10px 0;
+
+}
+
+.castMargin {
+    margin-left: 100px;
+}
+
+.reviewsMargin {
+    margin-left: 100px;
+}
