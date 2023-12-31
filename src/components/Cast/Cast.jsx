@@ -11,7 +11,7 @@ const Cast = () => {
 
   useEffect(() => {
     if (!movieId) {
-      navigate('/'); // Przekierowanie do strony głównej lub innej ścieżki
+      navigate('/'); 
       return;
     }
 
