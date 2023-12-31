@@ -25,16 +25,6 @@ const Home = () => {
     fetchTrendingMovies();
   }, []);
 
-  const [hoveredMovieId, setHoveredMovieId] = useState(null);
-
-  const handleMouseEnter = movieId => {
-    setHoveredMovieId(movieId);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredMovieId(null);
-  };
-
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -50,14 +40,11 @@ const Home = () => {
         movies.map(movie => (
           <div
             key={movie.id}
-            onMouseEnter={() => handleMouseEnter(movie.id)}
-            onMouseLeave={handleMouseLeave}
             className={css.movieItem}
           >
             <Link to={`/movies/${movie.id}`} className={css.movieLink}>
               <h3>{movie.title}</h3>
             </Link>
-            
           </div>
         ))
       ) : (
