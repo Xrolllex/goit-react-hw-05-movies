@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { searchMovies } from '../Api/Api';
+import { searchMovies } from '../../Api';
 import { Link } from 'react-router-dom';
 
 import css from './Movies.module.css';

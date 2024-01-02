@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link, useNavigate, Outlet } from 'react-router-dom';
+import { useParams, Link, Outlet } from 'react-router-dom';
 import {
   getMovieDetails,
   getMovieCredits,
   getMovieReviews,
-} from '../Api/Api';
+} from '../../Api';
 import css from './MovieDetails.module.css';
 
 const MovieDetails = () => {
@@ -12,7 +12,7 @@ const { movieId } = useParams();
 const [movie, setMovie] = useState(null);
 const [setCast] = useState([]);
 const [setReviews] = useState([]);
-const navigate = useNavigate();
+
 const [activeTab] = useState(null);
 
 useEffect(() => {
@@ -69,21 +69,18 @@ const getGenres = genres => {
     return genres.map(genre => genre.name).join(', ');
   };
 
-const handleGoBack = () => {
-    navigate('/');
-  };
-
-
 
   return (
     <>
-      <div className={css.movieDetails}>
-        <button className={css.goBack} onClick={handleGoBack}>
-          <Link to="/" className={css.linkStyle}>
-            &larr; Go Back
+      <div className={css.backButton}>
+          <Link to="/" className={css.goBack}>
+            Go Back
           </Link>
-        </button>
 
+        </div>
+      <div className={css.movieDetails}>
+       
+       
         {movie && (
           <>
             <div className={css.movieInfo}>
